@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/Satoshi-Variable.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+  font-family: "Satoshi";
+}
+
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 20px;
+    background-color: floralwhite;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    display: none;
+  }
+  .form-box.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box h2 {
+    font-family: "Satoshi";
+    margin-left: 20px;
+  }
+
+  .form-box label {
+    font-family: "Satoshi";
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .form-box input, .form-box textarea {
+    width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Satoshi";
+  }
+
+  .form-box button {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Satoshi";
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .form-box button:hover {
+    background-color: darkgreen;
+  }
+
+.logo{
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.error-message{
+  padding: 12px;
+  text-align: center;
+  background: pink;
+  color: red;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+

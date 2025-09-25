@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel ="icon" type = "image/x-icon" href="../img/logo.png">
+  <link rel = "stylesheet" href = "../css/mainStyle.css">
+  <title>Meet Me!</title>
+  <div class ="navBar">
+    <a class="active" href="../index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</head>
+<body>
+<br>
+<br>
+<br>
+
+
+
+<h1 class="header" id="home"><span id="typewriter-text" class="blinking-cursor"></span></h1>
+<div class ="about-section">
+
+<img class ="pic1" src ="../img/GBonilla4.JPG">
+
+<div class ="about-text">
+<h2 id ="about">About Me:</h2>
+
+<p class ="paragraph">Hello, my name is George Bonilla. I am currently an undergraduate student at SUNY Old Westbury.
+  I am studying Computer Information Science. I come from a Spanish-speaking home I am adequate in speaking Spanish and fluent in English.
+  I hope to gain experience in the computer science field throughout my time at Old Westbury.
+  I want to explore the various fields of computer science. Right now I am looking for an internship, so I can gain experience and learn
+  what industry I would like to go into after school:
+</p>
+</div>
+</div>
+
+<div class = "projects">
+<h1 class ="header" id ="projects">Projects:</h1>
+
+<p class ="paragraph2"> Here are some of the projects I have worked on:</p>
+
+  <ul class ="paragraph2">
+  <li>Python Workout Tracker App</li>
+    <ul>
+      <li>Created a Python app that allows users to chart, track, and see past workouts  </li>
+      <li>Uses the users input from forms to visualize and save the data </li>
+      <li>Skills Used: Python, Matplotlib, Custom Tkinter, and JSON </li>
+      <li>Here are some pictures of the program:</li>
+<div class="gallery-wrap">
+  <img src="../img/buttons/back.png" id="backBtn1">
+  <div class="scroll-gallery" id="scrollGallery1">
+    <img src="../img/projects/rep_app/logss.png" alt="Log Screen">
+    <img src="../img/projects/rep_app/graphss.png" alt="Graph Screen">
+    <img src="../img/projects/rep_app/historyss.png" alt="History Screen">
+  </div>
+  <img src="../img/buttons/next.png" id="nextBtn1">
+</div>
+      <li>
+        <a class = "links" href="https://github.com/GeorgeBonilla-1/4Across" target="_blank">Github Link </a>
+      </li>
+      <br>
+    </ul>
+    <li>Java Connect Four</li>
+    <ul>
+      <li>Created a Connect Four game that uses animation to represent the game pieces </li>
+      <li>Takes in user input and logic to decide the winner</li>
+      <li>Skills Used: Java and JavaFX </li>
+<div class="gallery-wrap">
+  <img src="../img/buttons/back.png" id="backBtn2">
+  <div class="scroll-gallery" id="scrollGallery2">
+    <img src="../img/projects/4Across/homess.png" alt="Main Menu">
+    <img src="../img/projects/4Across/gamess.png" alt="Game Screen">
+    <img src="../img/projects/4Across/gameoverss.png" alt="Game Over Screen">
+  </div>
+  <img src="../img/buttons/next.png" id="nextBtn2">
+</div>
+
+      <li>
+        <a class = "links" href="https://github.com/GeorgeBonilla-1/4Across" target="_blank">Github Link </a>
+      </li>
+    </ul>
+</ul>
+
+</div>
+
+<div class="skills">
+  <h2>Skills:</h2>
+  <div class="skills-grid">
+    <div class="skill-box">
+      <img src="../img/icons/html.png" alt="HTML Logo">
+      <span>HTML</span>
+    </div>
+    <div class="skill-box">
+      <img src="../img/icons/css.png" alt="CSS Logo">
+      <span>CSS</span>
+    </div>
+    <div class="skill-box">
+      <img src="../img/icons/js.png" alt="JavaScript Logo">
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-box">
+      <img src="../img/icons/python.png" alt="Python Logo">
+      <span>Python</span>
+    </div>
+    <div class="skill-box">
+      <img src="../img/icons/java.png" alt="Java Logo">
+      <span>Java</span>
+    </div>
+    <div class="skill-box">
+      <img src="../img/icons/sql.png" alt="SQL Logo">
+      <span>SQL</span>
+    </div>
+    <div class="skill-box">
+      <img src="../img/icons/kotlin.png" alt="Kotlin Logo">
+      <span>Kotlin</span>
+    </div>
+  </div>
+</div>
+
+
+<h2 class ="header" id ="contact">Contact:</h2>
+
+  <ul class ="contact-list">
+    <li>
+      <img src="../img/icons/email.png" alt="Email Logo">
+      <a href="mailto:georgebonillla@gmail.com" aria-label="Email">georgebonillla@gmail.com</a>
+    </li>
+    <li>
+      <img src="../img/icons/linkedin.png" alt="LinkedIn Logo">
+      <a href="https://www.linkedin.com/in/george-bonillla/" target = "_blank">Connect with me on LinkedIn</a>
+    </li>
+    <li>
+      <img src="../img/icons/github.png" alt="Github Logo">
+      <a href="https://github.com/GeorgeBonilla-1" target ="_blank">See More Projects on my Github</a>
+    </li>
+  </ul>
+
+
+<form action = "../php/send_email.php" method="post" class="contact-form" id = "contactForm">
+  <h2>Send Me A Message</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+  <div id="progress-bar" class="progress-bar"></div>
+  <button type="submit" value = "send" >Send Message</button>
+</form>
+
+<!-- Modal Popup -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <p id="modalMessage">Thanks for reaching out! I will respond soon :)</p>
+  </div>
+</div>
+
+
+</body>
+
+<footer class ="footer">
+  <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/sql-server" title="sql server icons">Sql server icons created by Nadiinko - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/android" title="android icons">Android icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Google - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/right-arrow" title="right arrow icons">Right arrow icons created by rukanicon - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Freepik - Flaticon</a>
+  <p class = "footer-text">© 2025 George Bonilla. All rights reserved.</p>
+
+</footer>
+
+<script>
+  function setGalleryControls(galleryId, backBtnId, nextBtnId) {
+    const scrollContainer = document.getElementById(galleryId);
+    const backBtn = document.getElementById(backBtnId);
+    const nextBtn = document.getElementById(nextBtnId);
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click", () => {
+      scrollContainer.scrollLeft += scrollContainer.offsetWidth * 0.8;
+    });
+
+    backBtn.addEventListener("click", () => {
+      scrollContainer.scrollLeft -= scrollContainer.offsetWidth * 0.8;
+    });
+  }
+
+  setGalleryControls("scrollGallery1", "backBtn1", "nextBtn1");
+  setGalleryControls("scrollGallery2", "backBtn2", "nextBtn2");
+
+  // Code For Message Sent Confirmation
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    fetch("../php/send_email.php", {// put the path to your php
+      method: "POST",
+      body: formData
+    })
+      .then(response => response.text())
+      .then(result => {
+        showModal("Thanks for reaching out! I'll get back to you soon :)"); // show modal with result
+        document.getElementById("contactForm").reset();
+
+        progressBar.style.transition = "none";
+        progressBar.style.width = "0";
+      })
+      .catch(error => {
+        showModal("Something went wrong. Please try again.");
+        progressBar.style.transition = "none";
+        progressBar.style.width = "0";
+      });
+  });
+
+
+  // Modal logic
+  function showModal(message) {
+    const modal = document.getElementById("modal");
+    const messageBox = document.getElementById("modalMessage");
+    const closeBtn = document.querySelector(".close-button");
+
+    messageBox.innerText = message;
+    modal.style.display = "block";
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  }
+
+  function typeWriterEffect(elementId, text, speed = 75) {
+    const el = document.getElementById(elementId);
+    let index = 0;
+
+    function typeChar() {
+      if (index < text.length) {
+        el.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeChar, speed);
+      }
+    }
+
+    typeChar();
+  }
+
+  // Start typing effect after the DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    typeWriterEffect("typewriter-text", "Hello, I am George Bonilla");
+
+    setTimeout(() => {
+      document.getElementById("typewriter-text").classList.remove("blinking-cursor");
+    }, 10000);
+  });
+
+</script>
+</html>
+

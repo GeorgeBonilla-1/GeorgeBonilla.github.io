@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/Satoshi-Variable.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  background-color: lightgoldenrodyellow;
+}
+
+.navBar {
+  background-color: forestgreen;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.navBar a {
+  position: relative;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  font-family: "Satoshi";
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 1;
+
+}
+
+.navBar a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(175, 203, 255);
+
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.navBar a:hover::after {
+  height: 100%;
+  bottom: 0;
+}
+
+.header{
+  font-family: "Satoshi";
+  color: black;
+  text-align: center;
+  width: fit-content;
+}
+
+.blinking-cursor::after {
+  content: "|";
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  font-family: "Satoshi";
+  color: black;
+  width: 100%;
+}
+
+.about-text h2{
+  font-family: "Satoshi";
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.paragraph{
+  font-family: "Satoshi";
+  width: fit-content;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px auto;
+  background-color: floralwhite;
+}
+.header2, .paragraph2, ul {
+  font-family: "Satoshi";
+  color: black;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.pic1 {
+  border-radius: 50%;
+  border: 5px solid black;
+  width: clamp(150px, 30vw, 250px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.projects {
+  font-family: "Satoshi";
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px 20px 40px;
+  text-align: left;
+  border: 5px solid black;
+  background-color: rgb(175, 203, 255);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: floralwhite;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.scroll-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: clamp(10px,2vw,20px);
+  flex-grow: 1;
+  padding: 10px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-gallery img {
+  width: clamp(120px, 30vw, 200px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  transition: transform 0.5s;
+}
+
+
+.scroll-gallery img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#backBtn1, #nextBtn1,
+#backBtn2, #nextBtn2 {
+  width: clamp(25px, 5vw, 40px);
+}
+
+.links{
+  color: black;
+}
+
+
+
+.skills {
+  font-family: "Satoshi";
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.skill-box {
+  background-color: floralwhite;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Satoshi";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-box img {
+  width: 60px;
+  height: 60px;
+}
+
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  font-family: "Satoshi";
+  font-size: 16px;
+}
+
+.contact-list img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+  font-palette: rgb(175, 203, 255) ;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  background-color: floralwhite;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+.contact-form h2{
+  font-family: "Satoshi";
+  margin-left: 20px;
+}
+
+.contact-form label {
+  font-family: "Satoshi";
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 300px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Satoshi";
+}
+
+.contact-form button {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Satoshi";
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: darkgreen;
+}
+
+.progress-bar {
+  height: 4px;
+  width: 0;
+  background-color: forestgreen;
+  margin: 10px 20px;
+  transition: width 2s ease;
+  border-radius: 2px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid forestgreen;
+  width: 80%;
+  max-width: 400px;
+  font-family: "Satoshi";
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: black;
+}
+
+
+.footer {
+  background-color: forestgreen;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Satoshi";
+  color: white;
+  margin-top: 40px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: white;
+}
+
+
+
